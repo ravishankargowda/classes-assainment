@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+
+<style type="text/css">
+	table,th,tr,td{
+
+border: 20px solid pink;font-size: 40px;text-align:left;
+	}
+</style>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">name</th>
+      <th scope="col">year</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td id="demo"></td>
+      <td id="demo1"></td>
+     
+    </tr>
+   
+    </tr>
+  </tbody>
+</table>
+<body>
+
+
+<p id="demo"></p>
+
+<p id="demo1"></p>
+
+<script>
+class Car {
+  constructor(name, year,color) {
+    this.name = name;
+    this.year = year;
+    this.year = color;
+  }
+}
+
+const myCar = new Car("sapari", 1998);
+document.getElementById("demo").innerHTML =myCar.name;
+document.getElementById("demo1").innerHTML =myCar.year;
+</script>
+
+</body>
+</html>
